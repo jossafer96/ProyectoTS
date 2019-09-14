@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simulador</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Corben&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ebcee96589.js"></script>
+</head>
+<body>
+    
+    
+    <main role="main" class="container" style="height: 500px">
+            <div class="dropdown" >
+                    <button class="btn " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bars" style="font-size: 30px;"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <button class="dropdown-item" type="button" onclick="window.location='historial.html'">Ver Historial</button>
+                      <button class="dropdown-item" type="button" onclick="window.location='manual.html'">Ver Manual</button>
+                      <button class="dropdown-item" type="button" onclick="window.location='index.html'">Salir</button>
+                    </div>
+                  </div>
+        <h1>Simulador de Poblacion</h1>
+        <div class="row" style="height: 100%">
+            <div class="col-lg-6 ">
+                <h2>Poblacion Final</h2>
+                <div style="background-color: darkgray; height:100%">
+
+                </div>
+            </div>
+            <div class="col-lg-6 ">
+                <div class="row" >
+                   <div class="col-10" style="margin-bottom: 50px;">
+                        <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Poblacion Inicial</span>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">Personas</span>
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Tasa de Mortalidad</span>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">%</span>
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Tasa de Natalidad</span>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">%</span>
+                                </div>
+                            </div>
+                   </div>
+                   <div class="col-2">
+                        <button type="button" class="btn1 btn-primary">INICIAR</button>
+                        <button type="button" class="btn1 btn-info">RESET</button>
+                   </div>
+            </div>
+            <div class="row" style="height: 300px">
+                <div class="col-6">
+                    <h3>Tasa Natalidad</h3>
+                    <div style="background-color: darkgray; height:100%">
+
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h3>Tasa Mortalidad</h3>
+                    <div style="background-color: darkgray; height:100%">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+     
+    </main>
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/controlador2.js"></script>
+   
+  
+</body>
+</html>
